@@ -24,11 +24,9 @@
                 width: 100%;
                 background-color: rgba(44, 42, 39, 0.983);
                 list-style-type: none;
-               
                 margin: 0;
                 padding: 0;
-            }
-           
+            } 
             nav ul li {
                 display: inline-block;
             }
