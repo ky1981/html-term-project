@@ -7,6 +7,7 @@
 
 <!-- fonts, css, js -->
 <link type="text/css" rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -55,21 +56,72 @@
             <li class="home"><a href="#">Home</a></li>
         </ul>
     </nav>
-  <div class="flex-box">
-      <div class="left">
-          <div class="big-img">
-             <img src="/images/luna600-1.jpg" alt="루나">
+  <div class="small-container single-product">
+      <div class="row">
+          <div class="col-2">
+             <img src="/images/luna600-1.jpg" width="100%" 
+             id="productImg">
+           <div class="small-img-row">
+             <div class="small-img-col">
+               <img src="/images/luna300-1.jpg" width="100%" 
+             class="small-img">
+             </div>  
+             <div class="small-img-col">
+               <img src="/images/luna300-2.jpg" width="100%" 
+             class="small-img">
+             </div>
+              <div class="small-img-col">
+               <img src="/images/luna300-3.jpg" width="100%" 
+             class="small-img">
+             </div>
+              <div class="small-img-col">
+               <img src="/images/luna300-4.jpg" width="100%" 
+             class="small-img">
+             </div>
           </div>
-           <div class="small-img">
-             <img src="/images/luna300-1.jpg">
-           </div>  
-           <div class="small-img">
-             <img src="/images/luna300-2.jpg">
-           </div>  
+         </div>
+            <div class="col-2">
+              <p>interior lighting</p>
+              <h1>LUNA TABLE LAMP</h1>
+              <h4>\125,000</h4>
+              <select>
+                <option>select Size</option>
+                <option>100파이</option>
+                <option>200파이</option>
+                <option>300파이</option>
+                <option>400파이</option>
+              </select>
+              <input type="number" value="1">
+              <a href="" class="btn">Add to cart</a>
+              <h3>Product Details<i class="fa fa-indent"></i>></h3>
+              <br>
+              <p>달빛을 품은 조명</p>
+             </div>
       </div> 
   </div>
 
- 
+  <script>
+    var productImg = document.getElementByID("ProductImg");
+    var SmallImg = ducument.getElementByclassName("small-img");
+    SmallImg[0].onclick =function()
+      {
+        productImg.src = SmallImg[0].src;
+      }
+    SmallImg[1].onclick =function()
+      {
+        productImg.src = SmallImg[1].src;
+      }
+    SmallImg[2].onclick =function()
+      {
+        productImg.src = SmallImg[2].src;
+      }
+    SmallImg[3].onclick =function()
+      {
+        productImg.src = SmallImg[3].src;
+      }
+  </script>
+
+
 <footer>
    <div class="footer-content">
      <h3>code opacity</h3>

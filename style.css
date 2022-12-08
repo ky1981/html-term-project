@@ -5,6 +5,7 @@
     }
 
     body {
+        font-family: 'poppins, sans-serif;
         background: #fcfcfc;
     }
   .header {
@@ -82,63 +83,92 @@
                 color: white;
             }
 
-    .leftcolumn {
-        float: left;
-        width: 100%;
-    }
-
-
-
-    .fakeimg {
-        background-color: rgb(228, 216, 216);
-        width: 100%;
-        padding: 20px;
-    }
-
-    .card {
-        background-color: white;
-        padding: 20px;
-        margin-top: 20px;
-    }
-
-   
-    .contents:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-.flex-box{
-      display: flex;
-      width: 1000px;
-      margin: 20px auto;
-  
+.small-container{
+          max-width: 1000px;
+          margin: auto;
+          padding-left: 25px;
+          padding-right: 20px;
 }
-.left{
-      width: 50%;
+.row{
+         display: flex;
+         align-items: center;
+         flex-wrap: wrap;
+         justify-content: space-around;
 }
-.big-img{
-      width: 250px;
+.single-product{
+         margin-top: 80px;
 }
-.big-img img{
-      width: inherit;
+.small-img-row{
+         display: flex;
+         justify-content: space-around;
 }
-.images{
-      display: flex;
-      justify-content: space-between;
-      width: 50%;
-      margin-top: 15px; 
+.col-2 img{
+         max-width: 100;
+         padding: 50px 0;
 }
-
-.small-img{
-      width: 50px;
+.small-img-col{
+        flex-basis: 24%;
+        cursor: pointer;
 }
-
-.small-img img{
-      width: inherit;
-      cursor: pointer;
+.single-product .col-2 img{
+       padding: 0;
 }
-
+.single-product .col-2{
+       padding: 20px;
+}
+.col-2{
+      flex-basis: 50%;
+      min-width: 300px;
+}
+.col-2 h1{
+      font-size: 50px;
+      line-height: 60px;
+      margin: 25px 0;
+}   
+.single-product select{
+      display: block;
+      padding: 10px;
+      margin-top: 20px;
+}
+.single-product h4{
+      margin: 20px 0;
+      font-size: 22px;
+      font-weight: bold;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+input:focus{
+     outline: none;
+}
+a{
+     text-decoration: none;
+     color: #555;
+}
+.single-product .fa{
+     color: #ff523b;
+     margin-left: 10px;
+}
+p{
+    color: #555;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
 
 
 footer{
