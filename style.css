@@ -3,6 +3,14 @@
         padding: 0px;
         box-sizing: border-box;
     }
+html, body{
+       height: 100%
+}
+#warp {
+      min-height: 100%
+      position: relative;
+      padding-bottom: 60px;
+}
 
     body {
         font-family: 'poppins, sans-serif;
@@ -170,8 +178,10 @@ p{
     background: #563434;
 }
 
+
 footer{
-      position: absolute;
+      position: relative;
+      transform: translatY(-100%);
       bottom: 0;
       left: 0;
       right: 0;
